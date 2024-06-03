@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 20px 0;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            padding: 24px;
+            text-align: center;
+        }
+        .header {
+            font-size: 29px;
+            margin-bottom: 32px;
+        }
+        .otp-box {
+            background: #fff;
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        .otp-text {
+            font-size: 24px;
+            color: gray;
+            font-weight: 400;
+        }
+        .otp {
+            font-size: 40px;
+            letter-spacing: 5px;
+        }
+        .footer {
+            margin-bottom: 32px;
+        }
+        .cta-button {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 5px;
+            background: #007aff;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="center">
+                    <table class="content" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="header">Welcome to Flex!</td>
+                        </tr>
+                        <tr>
+                            <td class="otp-box">
+                                <h3 class="otp-text">Your OTP for logging in is</h3>
+                                <h3 class="otp">{{ .Token }}</h3>
+                                <p>Do not share this OTP with anyone</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Flex is a portfolio builder that helps you launch your portfolio in seconds</p>
+                                <p class="footer">We cannot wait to see what you make</p>
+                                <a href="http://flexinbio.com" class="cta-button">flexinbio.com</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
